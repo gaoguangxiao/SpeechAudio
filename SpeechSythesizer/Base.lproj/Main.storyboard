@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGI-qH-acq">
+                                <rect key="frame" x="147" y="313.5" width="80" height="40"/>
+                                <color key="backgroundColor" red="0.66526485940000002" green="0.91764705879999997" blue="0.33590422939999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="WNB-Ta-A11"/>
+                                    <constraint firstAttribute="height" constant="40" id="dpA-ay-P6J"/>
+                                </constraints>
+                                <state key="normal" title="开始说话">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startSpeak:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vle-dE-r96"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPa-7u-pXJ">
+                                <rect key="frame" x="147" y="374" width="80" height="40"/>
+                                <color key="backgroundColor" red="0.66526485940000002" green="0.91764705879999997" blue="0.33590422939999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="2qJ-gU-uee"/>
+                                    <constraint firstAttribute="height" constant="40" id="vMw-Tn-nM2"/>
+                                </constraints>
+                                <state key="normal" title="停止说话">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopSpeak:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v2h-k0-yyr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HGI-qH-acq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PCI-N9-Mkf"/>
+                            <constraint firstItem="sPa-7u-pXJ" firstAttribute="top" secondItem="HGI-qH-acq" secondAttribute="bottom" constant="21" id="Uog-Ii-Dvb"/>
+                            <constraint firstItem="HGI-qH-acq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p6R-WE-SLc"/>
+                            <constraint firstItem="sPa-7u-pXJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xV5-R8-5fD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
